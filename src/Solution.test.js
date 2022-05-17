@@ -2,8 +2,11 @@ import Solution from './Solution'
 
 describe('fizzBuzz Solution', () => {
   it('displays the input when the number is not fizzbuzz', () => {
+    expect(Solution({ input:'' })).toBe('');
     expect(Solution({ input:'1' })).toBe('1');
     expect(Solution({ input:'2' })).toBe('2');
+    expect(Solution({ input:'-1' })).toBe('-1');
+    expect(Solution({ input:'-2' })).toBe('-2');
   })
 
   it('displays Fizz when the number is 3', () => {
