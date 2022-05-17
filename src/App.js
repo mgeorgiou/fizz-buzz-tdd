@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Solution from './Solution';
 
 class App extends React.Component {
 
@@ -7,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = {value: ''};
 
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
@@ -28,8 +29,8 @@ class App extends React.Component {
             onChange={this.handleChange}
              />
         </form>
-
-        <h2>{this.state.value}</h2>
+        <h2><Solution input={this.state.value} /></h2>
+        {/* <h2>{this.state.value}</h2> */}
       </header>
     </div>
     )
