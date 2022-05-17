@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = {value: ''};
 
-    // this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {

@@ -1,7 +1,7 @@
 const Solution = ({input}) => {
-    // if (isNaN(input)) {
-    //     return "Error: The input must be numeric"
-    // }
+    if (isNaN(input)) {
+        return "Error: The input must be numeric"
+    }
 
     const multiple3 = input % 3 === 0;
     const multiple5 = input % 5 === 0;
